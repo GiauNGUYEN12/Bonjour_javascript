@@ -1,3 +1,4 @@
+let firstname = prompt("Quel est votre nom?","")
 function sayHello(firstname,hour){
     if (hour >= 18){
         console.log("Bonsoir "+ firstname+"!")
@@ -5,9 +6,7 @@ function sayHello(firstname,hour){
     else{
 let message = "Bonjour !"
 message = "Bonjour " + firstname + "!"
-console.log (message)
+document.querySelector('h1').innerText = message;
     }
 } 
-sayHello(`Beyonce`, 11);
-sayHello(`Beyonce`, 18);
-sayHello(`Beyonce`, 17);
+sayHello(firstname)
